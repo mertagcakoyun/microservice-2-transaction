@@ -6,6 +6,5 @@ import java.util.*;
 
 public interface ITransactionRepository extends JpaRepository<Transaction,Long>
 {
-
     List<Transaction> findAllByUserId(Long userId);
 }

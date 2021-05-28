@@ -2,8 +2,10 @@ package com.sha.microservice2transaction;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
+@PropertySource("classpath:application-${spring.profiles.avtive:default}.properties")
 public class Microservice2TransactionApplication {
 
 	public static void main(String[] args) {
